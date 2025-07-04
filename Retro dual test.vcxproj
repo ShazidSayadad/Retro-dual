@@ -128,26 +128,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\Project\Retro Dual\main.c" />
     <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\Project\Retro Dual\Bac.png" />
-    <Image Include="..\..\..\Project\Retro Dual\ball.png" />
-    <Image Include="..\..\..\Project\Retro Dual\bg3.png" />
-    <Image Include="..\..\..\Project\Retro Dual\dirt.png" />
-    <Image Include="..\..\..\Project\Retro Dual\dirt2.png" />
-    <Image Include="..\..\..\Project\Retro Dual\Instruction.png" />
-    <Image Include="..\..\..\Project\Retro Dual\paddleBlue.png" />
-    <Image Include="..\..\..\Project\Retro Dual\paddleRed.png" />
-    <Image Include="..\..\..\Project\Retro Dual\pixantiqua.png" />
-    <Image Include="..\..\..\Project\Retro Dual\power.png" />
-    <Image Include="..\..\..\Project\Retro Dual\sand.png" />
-    <Image Include="..\..\..\Project\Retro Dual\sand2-modified.png" />
-    <Image Include="..\..\..\Project\Retro Dual\sand2.png" />
-    <Image Include="..\..\..\Project\Retro Dual\Title.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="..\..\..\Project\Retro Dual\sound.mp3" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

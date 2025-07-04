@@ -175,11 +175,11 @@ int main()
     InitAudioDevice();
     SetTargetFPS(60);
 
-    Ball_img = LoadTexture("../../../Project/Retro Dual/ball.png");
-    Background = LoadTexture("../../../Project/Retro Dual/bac.png");
-    Title = LoadTexture("../../../Project/Retro Dual/Title.png");
-    Instruction = LoadTexture("../../../Project/Retro Dual/Instruction.png");
-    Power = LoadTexture("../../../Project/Retro Dual/power.png");
+    Ball_img = LoadTexture("./Assets/ball.png");
+    Background = LoadTexture("./Assets/bac.png");
+    Title = LoadTexture("./Assets/Title.png");
+    Instruction = LoadTexture("./Assets/Instruction.png");
+    Power = LoadTexture("./Assets/power.png");
 
     //Sound sound = LoadSound("../../../Project/Retro Dual/sound.mp3");
 

@@ -13,62 +13,13 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Assets">
-      <UniqueIdentifier>{679ffffc-01bf-4ccc-ae72-041eeb7e1d10}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\Project\Retro Dual\sand.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="..\..\..\Project\Retro Dual\sand2.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="..\..\..\Project\Retro Dual\sand2-modified.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="..\..\..\Project\Retro Dual\Title.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="..\..\..\Project\Retro Dual\Bac.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="..\..\..\Project\Retro Dual\ball.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="..\..\..\Project\Retro Dual\bg3.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="..\..\..\Project\Retro Dual\dirt.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="..\..\..\Project\Retro Dual\dirt2.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="..\..\..\Project\Retro Dual\Instruction.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="..\..\..\Project\Retro Dual\paddleBlue.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="..\..\..\Project\Retro Dual\paddleRed.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="..\..\..\Project\Retro Dual\pixantiqua.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="..\..\..\Project\Retro Dual\power.png">
-      <Filter>Assets</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="..\..\..\Project\Retro Dual\sound.mp3">
-      <Filter>Assets</Filter>
-    </Media>
+    <ClCompile Include="..\..\..\Project\Retro Dual\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
