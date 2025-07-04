@@ -7,8 +7,7 @@
 
 Texture2D Background;
 Texture2D Background2;
-Texture2D Background3;
-Texture2D BallIMG;
+Texture2D Ball_img;
 Texture2D Title;
 Texture2D Instruction;
 Texture2D Power;
@@ -76,7 +75,7 @@ void reset(Ball* ball, Paddle* leftPaddle, Paddle* rightPaddle)
 void Draw_ball(Ball ball)
 {
     DrawCircle(ball.ballX, ball.ballY - 8, ball.radius, BLACK);
-    DrawTextureEx(BallIMG, Vector2 { ball.ballX - 12, ball.ballY - 20 }, 0, 0.5f, WHITE);
+    DrawTextureEx(Ball_img, Vector2 { ball.ballX - 12, ball.ballY - 20 }, 0, 0.5f, WHITE);
 
 }
 void ball_Update(Ball* ball, Paddle* paddle_L, Paddle* paddle_R)
@@ -176,17 +175,15 @@ int main()
     InitAudioDevice();
     SetTargetFPS(60);
 
-    Background = LoadTexture("D:/Project/Retro Dual/dirt2.png");
-    Background2 = LoadTexture("D:/Project/Retro Dual/sand2-modified.png");
-    BallIMG = LoadTexture("D:/Project/Retro Dual/ball.png");
-    Background3 = LoadTexture("D:/Project/Retro Dual/bac.png");
-    Title = LoadTexture("D:/Project/Retro Dual/Title.png");
-    Instruction = LoadTexture("D:/Project/Retro Dual/Instruction.png");
-    Power = LoadTexture("D:/Project/Retro Dual/power.png");
+    Ball_img = LoadTexture("../../../Project/Retro Dual/ball.png");
+    Background = LoadTexture("../../../Project/Retro Dual/bac.png");
+    Title = LoadTexture("../../../Project/Retro Dual/Title.png");
+    Instruction = LoadTexture("../../../Project/Retro Dual/Instruction.png");
+    Power = LoadTexture("../../../Project/Retro Dual/power.png");
 
-    Sound sound = LoadSound("D:/Project/Retro Dual/sound.mp3");
+    //Sound sound = LoadSound("../../../Project/Retro Dual/sound.mp3");
 
-    PlaySound(sound);
+    //PlaySound(sound);
 
     Ball ball;
     ball.ballX = GetScreenWidth() / 2;
@@ -263,7 +260,7 @@ int main()
 
         case GAME:
             DrawFPS(0, 0);
-            DrawTextureEx(Background3, Vector2 { 0, 0 }, 0, 1, WHITE);
+            DrawTextureEx(Background, Vector2 { 0, 0 }, 0, 1, WHITE);
 
             Draw_ball(ball);
             if (default_draw == 1)
@@ -392,6 +389,11 @@ int main()
         EndDrawing();
 
     }
+    UnloadTexture(Ball_img);
+    UnloadTexture(Background);
+    UnloadTexture(Title);
+    UnloadTexture(Power);
+    UnloadTexture(Instruction);
     CloseWindow();
     return 0;
 }
